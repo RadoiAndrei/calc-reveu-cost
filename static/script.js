@@ -1,7 +1,8 @@
 const apiKey = '1a903fec6414f2c45f75';
 const apiURL = `https://free.currconv.com/api/v7/convert?q=EUR_RON&compact=ultra&apiKey=${apiKey}`;
 
-async function calcCost() {
+async function calcCost(event) {
+    event.preventDefault();
     let res = await fetch(apiURL);
     if (res.ok) {
         res = await res.json();

@@ -24,12 +24,11 @@
 <body>
     <div class="contentWrapper">
         <div class="content">
-            <form>
+            <form onsubmit=calcCost(event)>
                 <div class="input-group">
                     <input id="peopleNo" type="number" class="form-control text-center" placeholder="Numar persoane">
                     <div class="input-group-append">
-                        <button class="btn btn-outline-success" type="button" id="button-addon2"
-                            onclick="calcCost()">Calculeaza</button>
+                        <button class="btn btn-outline-success" type="submit" id="button-addon2">Calculeaza</button>
                     </div>
                 </div>
             </form>
