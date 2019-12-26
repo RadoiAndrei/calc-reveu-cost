@@ -14,7 +14,7 @@ async function calcCost() {
             "tax": taxCost,
             "consumables": consumables
         };
-        document.getElementById("result").innerHTML = `<strong class="text-secondary">Bautura si alcool:</strong> ${values.consumables} Lei<br><strong class="text-secondary">Pret inchiriere vila:</strong> ${values.rent.toFixed(2)} Lei<br><strong class="text-secondary">Taxa in caz ca spargem ceva:</strong> ${values.tax.toFixed(2)} Lei<br><strong class="text-success">Total per persoana:</strong> ${(values.consumables + values.rent + values.tax).toFixed(2)} Lei`;
+        document.getElementById("result").innerHTML = `<strong class="text-secondary">Mancare si bautura:</strong> ${values.consumables} Lei<br><strong class="text-secondary">Pret inchiriere vila:</strong> ${values.rent.toFixed(2)} Lei<br><strong class="text-secondary">Taxa in caz ca spargem ceva:</strong> ${values.tax.toFixed(2)} Lei<br><strong class="text-success">Total per persoana:</strong> ${(values.consumables + values.rent + values.tax).toFixed(2)} Lei`;
     } else {
         document.getElementById("result").innerHTML = '<span class="text-danger">Scuze boss, nu mi-a iesit.</span>';
     }
