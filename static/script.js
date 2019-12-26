@@ -3,9 +3,9 @@ const apiURL = `https://free.currconv.com/api/v7/convert?q=EUR_RON&compact=ultra
 
 async function calcCost() {
     let res = await fetch(apiURL);
-    let nrPersoane = document.getElementById("peopleNo").value;
     if (res.ok) {
         res = await res.json();
+        let nrPersoane = document.getElementById("peopleNo").value;
         let rentCost = 600 * res.EUR_RON / nrPersoane;
         let taxCost = 200 * res.EUR_RON / nrPersoane;
         let consumables = 40;
